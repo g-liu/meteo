@@ -23,3 +23,10 @@ When the program runs, input your location. For example:
 
     >>> Location? Seattle, WA
     >>> Location? 1600 Pennsylvania Avenue, Washington DC
+
+
+TODO
+====
+
+* Bash script to automatically run this
+* More options (command line args)

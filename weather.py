@@ -20,4 +20,3 @@ print("Current conditions at (%f, %f):" %(loc.latitude, loc.longitude))
 print("%d degrees and %s" %(fc['temperature'], fc['summary']))
 print("Feels like %d degrees" %(fc['apparentTemperature']))
 print("High %d, low %d" %(fd['temperatureMax'], fd['temperatureMin']))
-
