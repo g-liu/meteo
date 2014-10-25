@@ -9,9 +9,15 @@ userInput = input("Location? ")
 loc = geolocator.geocode(userInput)
 
 queryString = "https://api.forecast.io/forecast/%s/%s,%s" %(API_KEY, loc.latitude, loc.longitude)
-print(queryString)
 
 rawData = b.get(queryString)
 jsonData = rawData.json()
+fc = jsonData['currently']
+fd = jsonData['daily']['data'][0]
 
-print(jsonData)
+print()
+print("Current conditions at (%f, %f):" %(loc.latitude, loc.longitude))
+print("%d degrees and %s" %(fc['temperature'], fc['summary']))
+print("Feels like %d degrees" %(fc['apparentTemperature']))
+print("High %d, low %d" %(fd['temperatureMax'], fd['temperatureMin']))
+
