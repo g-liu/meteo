@@ -53,7 +53,7 @@ docs/_build/
 target/
 
 # Ignore the API Key file from now on
-API_KEY
+./API_KEY
 
 # =========================
 # Operating System Files
