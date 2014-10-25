@@ -52,6 +52,9 @@ docs/_build/
 # PyBuilder
 target/
 
+# Ignore the API Key file from now on
+API_KEY
+
 # =========================
 # Operating System Files
 # =========================
@@ -64,7 +67,8 @@ target/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
