@@ -31,7 +31,7 @@ if int(fc['temperature']) != int(fc['apparentTemperature']):
 
 print("High %d, low %d" %(fd['temperatureMax'], fd['temperatureMin']))
 
-if float(fc['precipIntensity']) > 0:
+if float(fc['precipIntensity']) > 0.005:
 	print("%.2f in/hr of %s" %(fc['precipIntensity'], fc['precipType']))
 
 if 'alerts' in jsonData and len(jsonData['alerts']):
